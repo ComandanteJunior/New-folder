@@ -1,0 +1,42 @@
+# Feito no python dia 25/08/22. Criado para aprendizagem.
+# Github: ComandanteJunior.
+print('Bem-vindo ao Quiz da Morte')
+answer=input('Você está pronto para jogar? (sim/nao): ')
+score=0
+total_questions=4
+
+if answer.lower()=='sim':
+ answer=input('Questao 1: Você quer tomar um tiro? ')
+if answer.lower()=='nao':
+        score += 10
+        print('Ainda bem! vamos continuar o quiz.')
+else:
+        print('Pois tome, pow pow. agora voce perdeu pontos')
+
+answer=input('Questao 2: Qual linguagem foi utilizada para esse quiz? ')
+if answer.lower()=='python':
+        score += 10
+        print('Certa resposta!')
+else:
+        print('Resposta errada! Perdestes pontos vais morrer em!')
+
+answer=input('Questao 3: Qual a cor do meu carro vermelho? ')
+if answer.lower()=='vermelho':
+        score += 1
+        print('Estranho como você sabia?! mas tudo bem, prosseguiremos')
+else:
+        print('Haha, você nunca ia descobrir mesmo, vamos prosseguir.')    
+        
+answer=input('Questao 4: O que é o que é de dia tá deitado e de noite tá em pé? ')
+if answer.lower()=='pé':
+        score += 1
+        print('És mais esperto do que eu pensava! pois, bem você venceu!\n')
+else:
+        print('Resposta errada! Agora você irá passar toda a eternidade como um Dev Junior\n')
+
+print('Obrigado por jogar o Quiz da morte, espero que tenha se divertido! sua pontuação foi de',score,'Respostas corretas.\n') 
+
+mark=(score/total_questions)*100
+print('Pontuacao:',mark)
+
+print('Até a próxima! Jogue também o jogo do carro feito em C++')                   
